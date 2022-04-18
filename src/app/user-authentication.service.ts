@@ -8,7 +8,7 @@ import { UserInfo } from "./models/user-info";
   providedIn: 'root'
 })
 export class UserAuthenticationService {
-  private baseUrl="https://springboot-shows.herokuapp.com/";
+  private baseUrl="https://springboot-shows.herokuapp.com/user/";
   public userId?: string;
 
   constructor(private httpClient: HttpClient) { }
