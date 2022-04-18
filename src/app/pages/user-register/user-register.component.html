@@ -1,0 +1,17 @@
+<app-app-header title="Show Recommendation" ></app-app-header>
+<div class="container col-md-6">
+  <form>
+    <h1 class="login-header" >User SignUp/SignIn</h1>
+    <div class="mb-3">
+      <label for="userName" class="form-label">User Name</label>
+      <input type="text"  name="userName" [(ngModel)]="user.userName" class="form-control" id="userName" placeholder="Eg: Kyro">
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" name="password" [(ngModel)]="user.password" class="form-control" id="password">
+    </div>
+    <button type="submit" class="btn btn-primary custom-button" (click)="registerUser()">Register</button>
+    <button type="submit" class="btn btn-primary custom-button" (click)="userLogin()">Login</button>
+  </form>
+  <router-outlet></router-outlet>
+</div>

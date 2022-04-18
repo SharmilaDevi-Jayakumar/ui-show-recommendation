@@ -1,0 +1,18 @@
+<nav class="nav justify-content-center" *ngIf="!isUserLoggedIn">
+  <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        {{title}}
+      </a>
+    </div>
+</nav>
+
+<nav class="navbar navbar-toggleable navbar-inverse bg-inverse" *ngIf="isUserLoggedIn">
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Logout</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" (click)="resetRecommendationHistory()">Reset Recommendation</a>
+    </li>
+  </ul>
+</nav>
