@@ -2,13 +2,12 @@
 <app-app-header title="TV show Recommendation"
             [isUserLoggedIn]="true" ></app-app-header>
 
-Welcome to your home page!!! Below is a new show recommendation just for you !!
+<p> Welcome to your home page!! Below is a new show recommendation curated just for you !! </p> <br>
 
 <div class="card" style="width: 18rem;">
   <img src="{{recommendedShow.image}}" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">{{recommendedShow.name}}</h5>
     <p class="card-text">Rating:{{recommendedShow.rating}}</p>
-    <a href="{{recommendedShow.url}}" class="btn btn-primary">Get more details</a>
   </div>
 </div>
